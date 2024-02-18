@@ -21,8 +21,28 @@ const Login = () => {
     }
 
   return (
-    <section className='relative border border-solid mx-0 lg:w-1/2 lg:mx-auto bg-current rounded-lg flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 md:mx-0 md:my-0'>
-        <form onSubmit={submitHandler} className="md:w-1/3 max-w-sm space-y-4 my-10">  
+
+    <div className='h-screen flex'>
+        <form onSubmit={submitHandler} className="w-full max-w-md m-auto bg-white border border-gray-200 drop-shadow-xl  py-10 px-16 rounded-3xl">  
+            <div>
+                <p className='font-bold text-2xl'>Sign into your Zlide account</p> <br />
+                <button className='py-3 px-[90px] border border-solid rounded-md text-sm bg-blue-100'>Continue with Google</button>
+            </div>
+            <div className="my-5 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-slate-500 after:flex-1 after:border-t after:border-slate-500">
+                <p className='mx-4 mb-0 text-center font-semibold text-slate-500'>or</p>
+            </div>
+            <p className='text-black text-md text-left mb-1'>Sign in with email</p>
+            <div className="font-semibold text-sm text-slate-500 text-left md:text-left">
+                New to Zlide?{" "}
+                <a 
+                    className='text-blue-800 hover:underline hover:underline-offset-4 hover:text-green-600'
+                    href="#">Sign up</a>
+            </div>
+            
+            <br />
+            <div className='pb-2 text-left'>
+                <label >Email</label>
+            </div>
             <input 
                 className='text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded'
                 type="email" 
@@ -31,6 +51,11 @@ const Login = () => {
                 onChange={changeHandler}
                 placeholder='Enter your email address' 
             />
+            <br />
+            <br />
+            <div className='pb-2 text-left'>
+                <label className='top-2'>Password</label>
+            </div>
             <input
                 className='text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded' 
                 type="password" 
@@ -51,25 +76,19 @@ const Login = () => {
                 <a
                     className='text-blue-700 hover:underline hover:underline-offset-4'
                     href="#">
-                        Forgot password
+                        Forgot password?
                 </a>
             </div>
             <div className="">
                 <button 
-                    className='mt-4 bg-blue-700 hover:bg-blue-500 hover:text-slate-900 hover:font-semibold px-4 py-2 text-white uppercase rounded text-xs tracking-wider'
+                    className='mt-4 bg-blue-700 hover:bg-blue-500 hover:text-slate-900 hover:font-semibold px-[137px] py-2 text-white rounded text-sm'
                     type="submit"
                     >
-                        <Link to='/'>Login</Link>
+                        <Link to='/'>Sign In</Link>
                 </button>
             </div>
-            <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
-                Don&apos;t have an account?{" "}
-                <a 
-                    className='text-green-700 hover:underline hover:underline-offset-4 hover:text-green-600'
-                    href="#">Sign up</a>
-            </div>
         </form>         
-    </section>
+    </div>
   )
 }
 
