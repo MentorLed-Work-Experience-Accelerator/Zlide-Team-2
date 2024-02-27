@@ -1,7 +1,7 @@
 import React from 'react'
 import { hideIcon } from '../assets'
 
-const ForgotPassword2 = () => {
+const ForgotPassword2 = ({setCurrent}) => {
   return (
     <div className='w-[480px] p-16 bg-white rounded-[40px] shadow-2xl z-40'>
       <div>
@@ -46,6 +46,9 @@ const ForgotPassword2 = () => {
           {/* Button */}
           <button 
             className='py-3 text-sm w-full rounded-md bg-primary text-white flex items-center justify-center gap-4'
+            onClick={() => {
+              setCurrent(0)
+            }}
           >
             Reset Password
           </button>

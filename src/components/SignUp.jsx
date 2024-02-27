@@ -1,8 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { googleIcon, hideIcon } from '../assets'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
-const SignUp = () => {
+const SignUp = ({ onSignUp }) => {
+
+  const navigate = useNavigate()
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false);
+  const [strength, setStrength] = useState('Weak');
+
+  const handleChange = (e) => {
+    const newPassword = e.target.value;
+    setPassword(newPassword);
+    validatePassword(newPassword);
+  };
+
+  const validatePassword = (password) => {
+    const strongRegex = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})');
+    const mediumRegex = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})');
+    
+    if (strongRegex.test(password)) {
+      setStrength('Strong');
+    } else if (mediumRegex.test(password)) {
+      setStrength('Medium');
+    } else {
+      setStrength('Weak');
+    }
+  };
+
+  const handleSubmit = () => {
+    // Add validation logic here if needed
+    if (email && password) {
+      if (strength === 'Strong') {
+        onSignUp({ email, password });
+        navigate('/')
+      } else {
+        alert('Enter a stronger password')
+      }
+    } else {
+      alert("Please fill in all fields");
+    }
+  };
+
   return (
     <div className='w-[480px] py-8 px-16 bg-white rounded-[40px] shadow-2xl z-40'>
       <div>
@@ -43,7 +84,8 @@ const SignUp = () => {
                 type="email" 
                 name="email"
                 id='email'
-                // value={email} 
+                onChange={(e) => setEmail(e.target.value)}
+                value={email} 
                 // onChange={changeHandler}
                 placeholder='Enter your Email' 
               />
@@ -53,22 +95,23 @@ const SignUp = () => {
               <div className="relative w-full flex items-center">
                 <input 
                   className='py-3 placeholder:text-sm text-sm w-full rounded-md bg-secondary text-dimmestBlack outline outline-1 outline-[#ABBED1] pl-4 focus:outline-[#ABBED1]'
-                  type="password" 
+                  type={showPassword ? 'text' : 'password'} 
                   name="password"
                   id='password'
-                  // value={email} 
-                  // onChange={changeHandler}
+                  // value={password} 
+                  onChange={handleChange}
                   placeholder='Enter a Password' 
                 />
-                <img src={hideIcon} alt="" className="absolute right-4 cursor-pointer" />
+                <img src={hideIcon} alt="" className="absolute right-4 cursor-pointer" onClick={() => setShowPassword(!showPassword)} />
               </div>   
-              <span className="text-xs text-primary">
+              <span className={`text-xs ${strength === 'Weak' ? 'text-red-500' : strength === 'Medium' ? 'text-yellow-500' : strength === 'Strong' ? 'text-[#01B501]' : 'text-primary' }`}>
                 Password should have at least 8 characters, and at least 1 uppercase, lowercase, number and symbol characters.
               </span>
             </div>
             {/* Button */}
             <button 
               className='py-3 text-sm w-full rounded-md bg-primary text-white flex items-center justify-center gap-4'
+              onClick={handleSubmit}
             >
               Continue with email
             </button>

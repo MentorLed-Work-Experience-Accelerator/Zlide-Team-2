@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ForgotPassword1 = () => {
+const ForgotPassword1 = ({setCurrent}) => {
   return (
     <div className='w-[480px] p-16 bg-white rounded-[40px] shadow-2xl z-40'>
       <div>
@@ -27,6 +27,9 @@ const ForgotPassword1 = () => {
           {/* Button */}
           <button 
             className='py-3 text-sm w-full rounded-md bg-primary text-white flex items-center justify-center gap-4'
+            onClick={() => {
+              setCurrent(2)
+            }}
           >
             Send Reset Link
           </button>

@@ -1,8 +1,26 @@
 import React, { useState } from 'react'
 import { googleIcon, hideIcon } from '../assets'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const Login = ({ onLogin, setCurrent }) => {
+
+  const navigate = useNavigate()
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleSubmit = () => {
+    // Add login logic here
+    if (email && password) {
+      onLogin({ email, password });
+      navigate('/')
+    } else {
+      alert("Please fill in all fields");
+    }
+
+  };
+
 
     // const [data, setData] = useState({
     //     email:"",
@@ -131,7 +149,7 @@ const Login = () => {
                 name="email"
                 id='email'
                 // value={email} 
-                // onChange={changeHandler}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder='Enter your Email' 
               />
             </div>
@@ -140,22 +158,25 @@ const Login = () => {
               <div className="relative w-full flex items-center">
                 <input 
                   className='py-3 placeholder:text-sm text-sm w-full rounded-md bg-secondary text-dimmestBlack outline outline-1 outline-[#ABBED1] pl-4 focus:outline-[#ABBED1]'
-                  type="password" 
+                  type={showPassword ? 'text' : 'password'} 
                   name="password"
                   id='password'
                   // value={email} 
-                  // onChange={changeHandler}
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder='Enter a Password' 
                 />
-                <img src={hideIcon} alt="" className="absolute right-4 cursor-pointer" />
+                <img src={hideIcon} alt="" className="absolute right-4 cursor-pointer" onClick={() => setShowPassword(!showPassword)} />
               </div>   
-              <span className="text-xs text-primary text-right">
+              <span className="text-xs text-primary text-right cursor-pointer" onClick={() => {
+                setCurrent(1)
+              }}>
                 Forgot Password?
               </span>
             </div>
             {/* Button */}
             <button 
               className='py-3 text-sm w-full rounded-md bg-primary text-white flex items-center justify-center gap-4'
+              onClick={handleSubmit}
             >
               Sign In
             </button>
