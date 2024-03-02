@@ -45,7 +45,7 @@ const SignUp = ({ onSignUp }) => {
   };
 
   return (
-    <div className='w-[480px] py-8 px-16 bg-white rounded-[40px] shadow-2xl z-40'>
+    <div className='w-[480px] py-8 px-16 bg-white rounded-[40px] shadow-2xl z-40 mt-36'>
       <div>
           <h1 className='font-semibold text-[28px] mb-2 text-dimBlack'>
             Sign up for Zlide. It’s free.
@@ -116,7 +116,7 @@ const SignUp = ({ onSignUp }) => {
               Continue with email
             </button>
             <span className="text-xs text-dimmerBlack text-center">
-              By submitting your information, you agree to Zlide's Terms of Service and Privacy Policy. You can opt out anytime.
+              By submitting your information, you agree to Zlide&apos;s Terms of Service and Privacy Policy. You can opt out anytime.
             </span>
           </div>
       </div>

@@ -8,7 +8,7 @@ const Verification = () => {
           Verify!
         </h1>
         <p className="text-[#89939E] mb-8">
-          You’ve Signed Up! However, let’s be sure that it’s not someone else using your email.
+          You&apos;ve Signed Up! However, let&apos;s be sure that it&apos;s not someone else using your email.
         </p>
         <p className="text-primary">
           We sent a confirmation link to your email, click that link to proceed.

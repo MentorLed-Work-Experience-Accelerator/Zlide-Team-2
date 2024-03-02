@@ -109,7 +109,7 @@ const Login = ({ onLogin, setCurrent }) => {
     //     </form>         
     // </div>
 
-    <div className='w-[500px] py-10 px-16 bg-white rounded-[40px] shadow-2xl z-40'>
+    <div className='w-[500px] py-10 px-16 bg-white rounded-[40px] shadow-2xl z-40 mt-36'>
       <div>
           <h1 className='font-semibold text-[28px] mb-2 text-dimBlack'>
             Sign in your Zlide account.
