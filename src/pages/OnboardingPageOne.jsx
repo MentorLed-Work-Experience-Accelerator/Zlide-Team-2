@@ -9,7 +9,7 @@ const Onboarding = () => {
       <OnboardingOne />
     </div>
   )
-, { useState }}
+}
 
 
 export default Onboarding
