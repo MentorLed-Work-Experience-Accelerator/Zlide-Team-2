@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route,  } from 'react-router-dom'
 import { AboutPage, HomePage, LoginPage, SignUpPage } from './pages'
 import { Navbar, Footer } from './components'
+import { OnboardingPage } from './pages'
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/login' element={<LoginPage onLogin={handleLogin} />} />
         <Route path='/sign-up' element={<SignUpPage onSignUp={handleSignUp} />} />
+        <Route path='/onboarding' element={<OnboardingPage />} />
       </Routes>
       {/* <Footer /> */}
     </div>
