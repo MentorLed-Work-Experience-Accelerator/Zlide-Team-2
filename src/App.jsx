@@ -7,6 +7,7 @@ import { OnboardingPageTwo } from './pages'
 import { OnboardingPageThree } from './pages'
 import { OnboardingPageFour } from './pages'
 import { OnboardingPageFive } from './pages'
+import { DashboardPageOne } from './pages'
 
 function App() {
 
@@ -60,6 +61,7 @@ function App() {
         <Route path='/onboardingthree' element={<OnboardingPageThree />} />
         <Route path='/onboardingfour' element={<OnboardingPageFour />} />
         <Route path='/onboardingfive' element={<OnboardingPageFive />} />
+        <Route path='/dashboardone' element={<DashboardPageOne />} />
       </Routes>
       {/* <Footer /> */}
     </div>

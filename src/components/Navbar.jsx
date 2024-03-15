@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { Link, useNavigate  } from 'react-router-dom'
 import { zlideLogo } from '../assets'
 
@@ -10,7 +10,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, onLogout, user }) => {
     <div className='fixed left-0 right-0 top-0 flex justify-between items-center px-[100px] py-6 bg-white z-50'>
       <img src={zlideLogo} alt="" className="w-[100px] cursor-pointer" onClick={() => navigate('/onboarding')} />
       <div className="flex items-center justify-center gap-16 text-lg">
-        <Link to='/' className='text-primary'>Home</Link>
+        <Link to='/dashboardone' className='text-primary'>Home</Link>
         <Link to='/about' className='hover:text-primary'>About Us</Link>
         <Link to='/login' className='hover:text-primary'>Pricing</Link>
         <Link to='/sign-up' className='hover:text-primary'>Help</Link>
