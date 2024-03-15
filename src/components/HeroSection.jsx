@@ -17,16 +17,16 @@ const HeroSection = () => {
       <br />
       <div className="w-2/4 ">
         <input
-          className="text-sm w-full px-4 py-3 border border-solid border-gray-300 bg-blue-100 rounded"
+          className="text-sm w-full px-4 py-3 border border-solid outline-none border-gray-300 bg-blue-100 rounded"
           type="text"
           placeholder="Generate a presentation for.."
         />
         <br />
         <br />
-        <button className="md:py-2 py-2 md:px-8 px-6 text-white bg-blue-500 hover:bg-black hover:outline-black font-semibold outline outline-1 outline-primary rounded-md mr-3">
+        <button className="md:py-2 py-2 md:px-8 px-6 text-white bg-blue-500 hover:bg-black hover:outline-black border-none font-semibold outline outline-1 outline-primary rounded-md mr-3">
           Generate Presentation
         </button>
-        <button className="md:py-2 py-2 md:px-8 px-6 text-primary bg-blue-100  hover:bg-black hover:outline-black font-semibold outline outline-1 outline-gray-300 rounded-md">
+        <button className="md:py-2 py-2 md:px-8 px-6 text-primary bg-blue-100 hover:text-white border-none  hover:bg-blue-300 hover:outline-none font-semibold outline outline-1 outline-gray-300 rounded-md">
           Try for Free
         </button>
         <br />

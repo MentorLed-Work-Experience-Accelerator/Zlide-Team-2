@@ -12,15 +12,15 @@ const Features = () => {
           Why Zlide is the only tool you will need for creating presentations
         </p>
       </div>
-      <div className="my-20 grid grid-cols-2 gap-20 px-60">
+      <div className="my-20 grid grid-cols-2 gap-20 px-40">
         <div>
           <span className="float-left my-2 mr-6">
             <img src={icon6} alt="" className="w-[50px] h-[50px]" />
           </span>
           <h2 className="text-xl mb-2 font-bold">Content Generation</h2>
           <p>
-            Users are capable of generating contents for their presentations
-            just by entering a prompt.
+            Users are capable of generating contents for their
+            <br /> presentations just by entering a prompt.
           </p>
         </div>
         <div>
@@ -29,8 +29,8 @@ const Features = () => {
           </span>
           <h2 className="text-xl mb-2 font-bold">Image Generation</h2>
           <p>
-            Zlide generates images for user presentations by sourcing images
-            from image generation websites.
+            Zlide generates images for user presentations by
+            <br /> sourcing images from image generation websites.
           </p>
         </div>
         <div>
@@ -91,12 +91,10 @@ const Features = () => {
         <img src={video} alt="zlide display" />
       </div>
       <br />
+      <br />
       <div className="flex justify-center">
-        <button className="md:py-2 py-2 md:px-8 px-6 text-white bg-blue-500 hover:bg-black hover:outline-black font-semibold outline outline-1 outline-primary rounded-md mr-3">
-          Try for Free
-        </button>
-        <button className="md:py-2 py-2 md:px-8 px-6 text-primary bg-blue-100  hover:bg-black hover:outline-black font-semibold outline outline-1 outline-gray-300 rounded-md">
-          Request Demo
+        <button className="md:py-2 py-2 md:px-8 px-6 text-white text-xl bg-[#0671E0] hover:bg-black hover:outline-black outline outline-1 outline-primary rounded-md mr-3">
+          Get started
         </button>
       </div>
       <br />

@@ -32,7 +32,9 @@ import Facebook from "./Facebook.png";
 import Twitter from "./Twitter.png";
 
 import instagram from "./instagram.png";
-
+import FB from "./FB.png";
+import TW from "./TW.png";
+import IG from "./IG.png";
 export {
   zlideLogo,
   authBg,
@@ -54,4 +56,7 @@ export {
   Facebook,
   Twitter,
   instagram,
+  FB,
+  TW,
+  IG,
 };
