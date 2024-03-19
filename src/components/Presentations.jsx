@@ -11,7 +11,7 @@ const Presentations = () => {
                 +
             </button>
         </div>
-        <div className="flex items-center space-x-[838px] mb-3">
+        <div className="flex items-center space-x-[852px] mb-3">
             <p className="font-semibold text-[14px]">Recent Presentations</p>
             <p className="text-[12px] text-primary">View all</p>
         </div>
@@ -27,19 +27,19 @@ const Presentations = () => {
                     <div className="bg-white py-[40px] px-[80px] rounded-[4px]">
                         <img src={gallery} alt="" />
                     </div>
-                    <p className="text-black text-sm">Pitch deck</p>
+                    <p className="text-black text-sm">Team Onboarding</p>
                 </button>
                 <button className="py-4 bg-gray-200 px-8 rounded-md text-white space-y-2 items-center">
                     <div className="bg-white py-[40px] px-[80px] rounded-[4px]">
                         <img src={gallery} alt="" />
                     </div>
-                    <p className="text-black text-sm">Pitch deck</p>
+                    <p className="text-black text-sm">Performance Review</p>
                 </button>
                 <button className="py-4 bg-gray-200 px-8 rounded-md text-white space-y-2 items-center">
                     <div className="bg-white py-[40px] px-[80px] rounded-[4px]">
                         <img src={gallery} alt="" />
                     </div>
-                    <p className="text-black text-sm">Pitch deck</p>
+                    <p className="text-black text-sm">Product Brief</p>
                 </button>
             </div>
             <div className="flex items-center space-x-4">
@@ -47,25 +47,25 @@ const Presentations = () => {
                     <div className="bg-white py-[40px] px-[80px] rounded-[4px]">
                         <img src={gallery} alt="" />
                     </div>
-                    <p className="text-black text-sm">Pitch deck</p>
+                    <p className="text-black text-sm">Research Presentation</p>
                 </button>
                 <button className="py-4 bg-gray-200 px-8 rounded-md text-white space-y-2 items-center">
                     <div className="bg-white py-[40px] px-[80px] rounded-[4px]">
                         <img src={gallery} alt="" />
                     </div>
-                    <p className="text-black text-sm">Pitch deck</p>
+                    <p className="text-black text-sm">Sales Record</p>
                 </button>
                 <button className="py-4 bg-gray-200 px-8 rounded-md text-white space-y-2 items-center">
                     <div className="bg-white py-[40px] px-[80px] rounded-[4px]">
                         <img src={gallery} alt="" />
                     </div>
-                    <p className="text-black text-sm">Pitch deck</p>
+                    <p className="text-black text-sm">Vision Board</p>
                 </button>
                 <button className="py-4 bg-gray-200 px-8 rounded-md text-white space-y-2 items-center">
                     <div className="bg-white py-[40px] px-[80px] rounded-[4px]">
                         <img src={gallery} alt="" />
                     </div>
-                    <p className="text-black text-sm">Pitch deck</p>
+                    <p className="text-black text-sm">Top Executive Brief</p>
                 </button>
             </div>
         </div>
