@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { AboutPage, HomePage } from "./pages";
 import { Footer, HeroSection, Navbar, Pricing } from "./components";
-import Features from "./components/Features";
+// import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Partners from "./components/Partners";
 
@@ -16,7 +16,7 @@ function App() {
         <Route path="/sign-up" element={<SignUpPage />} />
       </Routes> */}
       <HeroSection />
-      <Features />
+      {/* <Features /> */}
       <Pricing />
       <Contact />
       <Partners />

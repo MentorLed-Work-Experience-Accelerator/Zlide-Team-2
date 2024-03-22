@@ -1,11 +1,12 @@
 // import React from "react";
-import { icon6, icon, icon1, icon2, icon3, icon4 } from "../assets";
-import { video } from "../assets";
+// import { icon6, icon, icon1, icon2, icon3, icon4 } from "../assets";
+// import { video } from "../assets";
 
-const Features = () => {
-  return (
-    <div>
-      <div className="flex justify-center flex-col text-center">
+// const Features = () => {
+//   return (
+//     <div>
+{
+  /* <div className="flex justify-center flex-col text-center">
         <h1 className="text-4xl font-bold">Features</h1>
         <br />
         <p className="text-xl">
@@ -76,9 +77,13 @@ const Features = () => {
             PowerPoint, PDF, and image, for sharing and distribution purposes.
           </p>
         </div>
-      </div>
-      <br />
-      <div className="flex justify-center flex-col text-center">
+      </div> */
+}
+{
+  /* <br /> */
+}
+{
+  /* <div className="flex justify-center flex-col text-center">
         <h2 className="text-4xl font-bold">How it works</h2>
         <br />
         <p className="text-xl ">
@@ -96,10 +101,15 @@ const Features = () => {
         <button className="md:py-2 py-2 md:px-8 px-6 text-white text-xl bg-[#0671E0] hover:bg-black hover:outline-black outline outline-1 outline-primary rounded-md mr-3">
           Get started
         </button>
-      </div>
-      <br />
-    </div>
+      </div> */
+}
+{
+  /* <br /> */
+}
+{
+  /* </div>
   );
 };
 
-export default Features;
+export default Features; */
+}
