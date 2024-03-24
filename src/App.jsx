@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Routes, Route,  } from 'react-router-dom'
 import { AboutPage, HomePage, LoginPage, SignUpPage } from './pages'
 import { Navbar, Footer } from './components'
-import { OnboardingPageOne } from './pages'
-import { OnboardingPageTwo } from './pages'
-import { OnboardingPageThree } from './pages'
-import { OnboardingPageFour } from './pages'
-import { OnboardingPageFive } from './pages'
+// import { OnboardingPageOne } from './pages'
+// import { OnboardingPageTwo } from './pages'
+// import { OnboardingPageThree } from './pages'
+// import { OnboardingPageFour } from './pages'
+// import { OnboardingPageFive } from './pages'
 import { DashboardPageOne } from './pages'
 import { DownloadOverlayPage } from './pages'
 import { PreviewPage } from './pages'
@@ -58,11 +58,11 @@ function App() {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/login' element={<LoginPage onLogin={handleLogin} />} />
         <Route path='/sign-up' element={<SignUpPage onSignUp={handleSignUp} />} />
-        <Route path='/onboarding' element={<OnboardingPageOne />} />
+        {/* <Route path='/onboarding' element={<OnboardingPageOne />} />
         <Route path='/onboardingtwo' element={<OnboardingPageTwo />} />
         <Route path='/onboardingthree' element={<OnboardingPageThree />} />
         <Route path='/onboardingfour' element={<OnboardingPageFour />} />
-        <Route path='/onboardingfive' element={<OnboardingPageFive />} />
+        <Route path='/onboardingfive' element={<OnboardingPageFive />} /> */}
         <Route path='/dashboardone' element={<DashboardPageOne />} />
         <Route path='/downloadoverlay' element={<DownloadOverlayPage />} />
         <Route path='/preview' element={<PreviewPage />} />
