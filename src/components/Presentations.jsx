@@ -9,7 +9,7 @@ const Presentations = () => {
     <div className='mt-10 ml-10 w-4/5 mb-8'>
         <div className="space-y-2 mb-10">
             <p className="font-semibold text-[14px] mb-1">Create Presentation</p>
-            <button className="bg-primary py-8 px-16 rounded-md text-white" onClick={() => navigate('/preview')}>
+            <button className="bg-primary py-8 px-16 rounded-md text-white" onClick={() => navigate('/content')}>
                 +
             </button>
         </div>

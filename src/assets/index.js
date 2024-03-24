@@ -15,6 +15,7 @@ import slide1 from './slide1.svg'
 import slide2 from './slide2.svg'
 import slide3 from './slide3.svg'
 import slide4 from './slide4.svg'
+import clipboard from './clipboard.png'
 
 export {
   reactIcon,
@@ -34,4 +35,5 @@ export {
   slide3,
   slide4,
   gallery,
+  clipboard,
 }

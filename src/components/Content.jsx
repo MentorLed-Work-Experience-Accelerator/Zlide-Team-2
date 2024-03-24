@@ -1,7 +1,10 @@
 import { clipboard } from "../assets";
+import { useNavigate  } from 'react-router-dom'
+
 const Content = () => {
+  const navigate = useNavigate()
   return (
-    <div className="w-full flex flex-col items-center">
+<div className="fixed flex flex-col inset-0 justify-center items-center bg-[#0000001A] backdrop-blur-2xl z-50">
       <h1 className="text-black text-start text-3xl font-bold w-[60%]">
         Paste your Content
       </h1>
@@ -17,13 +20,14 @@ const Content = () => {
       </div>
       <br />
       <div className="flex justify-end gap-16 w-[60%]">
-        <button className="text-blue-500 text-xl font-bold ">Cancel</button>
-        <button className="md:py-3 py-2 md:px-12 px-6 text-white bg-blue-500 hover:bg-black hover:outline-none font-semibold outline outline-none outline-primary rounded-md border-none w-[30%]">
+        <button className="text-blue-500 text-xl font-bold " onClick={() => navigate('/dashboardone')}>Cancel</button>
+        <button className="md:py-3 py-2 md:px-12 px-10 w-[40%] text-white bg-blue-500 hover:bg-black hover:outline-none font-semibold outline outline-none outline-primary rounded-md border-none" onClick={() => navigate('/contentpasted')}>
           Generate Presentation
         </button>
       </div>
-    </div>
+</div>
   );
 };
 
 export default Content;
+

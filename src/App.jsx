@@ -10,6 +10,10 @@ import { Navbar, Footer } from './components'
 import { DashboardPageOne } from './pages'
 import { DownloadOverlayPage } from './pages'
 import { PreviewPage } from './pages'
+import { ContentPage } from './pages';
+// import { ContentPastedPage } from './pages'
+import { ContentPastedPage } from './pages';
+
 
 function App() {
 
@@ -66,6 +70,8 @@ function App() {
         <Route path='/dashboardone' element={<DashboardPageOne />} />
         <Route path='/downloadoverlay' element={<DownloadOverlayPage />} />
         <Route path='/preview' element={<PreviewPage />} />
+        <Route path='/content' element={<ContentPage />} />
+        <Route path='/contentpasted' element={<ContentPastedPage />} />
       </Routes>
       {/* <Footer /> */}
     </div>
