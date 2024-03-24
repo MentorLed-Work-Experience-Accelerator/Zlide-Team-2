@@ -1,5 +1,3 @@
-import reactIcon from './react.svg'
+import clipboard from "./clipboard.png";
 
-export {
-  reactIcon
-}
+export { clipboard };
