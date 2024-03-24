@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route,  } from 'react-router-dom'
-import { AboutPage, HomePage, LoginPage, SignUpPage } from './pages'
-import { Navbar, Footer } from './components'
+import { AboutPage, Dashboard, GeneratedSlides, HomePage, LoadingPage, LoginPage, PricingPage, SignUpPage } from './pages'
+import { Footer, Navbar } from './components'
 
 function App() {
 
@@ -44,16 +44,20 @@ function App() {
 
   return (
     <div className="font-inter">
-      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} onLogout={handleLogout} user={user} />
+      {/* <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} onLogout={handleLogout} user={user} /> */}
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/pricing' element={<PricingPage />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/login' element={<LoginPage onLogin={handleLogin} />} />
         <Route path='/sign-up' element={<SignUpPage onSignUp={handleSignUp} />} />
+        <Route path='/loading' element={<LoadingPage />} />
+        <Route path='/generated-slides' element={<GeneratedSlides />} />
       </Routes>
       {/* <Footer /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
