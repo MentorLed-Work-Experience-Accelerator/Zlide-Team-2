@@ -8,6 +8,8 @@ import { OnboardingPageThree } from './pages'
 import { OnboardingPageFour } from './pages'
 import { OnboardingPageFive } from './pages'
 import { DashboardPageOne } from './pages'
+import { DownloadOverlayPage } from './pages'
+import { PreviewPage } from './pages'
 
 function App() {
 
@@ -62,6 +64,8 @@ function App() {
         <Route path='/onboardingfour' element={<OnboardingPageFour />} />
         <Route path='/onboardingfive' element={<OnboardingPageFive />} />
         <Route path='/dashboardone' element={<DashboardPageOne />} />
+        <Route path='/downloadoverlay' element={<DownloadOverlayPage />} />
+        <Route path='/preview' element={<PreviewPage />} />
       </Routes>
       {/* <Footer /> */}
     </div>

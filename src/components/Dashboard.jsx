@@ -6,7 +6,7 @@ import Presentations from './Presentations'
 
 const Dashboard = () => {
   return (
-    <div >
+    <div>
         <div className="fixed top-0 z-50 w-full">
             <DashboardNavbar />
         </div>

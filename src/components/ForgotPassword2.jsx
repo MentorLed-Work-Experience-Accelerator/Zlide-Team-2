@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { hideIcon } from '../assets'
 
 const ForgotPassword2 = ({setCurrent}) => {
