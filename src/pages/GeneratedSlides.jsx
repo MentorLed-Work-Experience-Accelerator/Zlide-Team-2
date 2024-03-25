@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { image1, image2, image3, image4, image5 } from '../assets'
 import { useNavigate } from "react-router-dom"
 
@@ -27,7 +27,7 @@ const GeneratedSlides = () => {
         </div>
       </div> 
       <div className="w-[90%] mt-10 flex justify-end gap-6">
-        <button className="md:py-3 py-2 px-6 text-primary bg-transparent">
+        <button className="md:py-3 py-2 px-6 text-primary bg-transparent" onClick={() => navigate('/dashboardone')}>
           Back To Dashboard
         </button>
         <button className="md:py-3 py-2 px-6 text-primary bg-white hover:bg-black hover:outline-black outline outline-1 outline-primary rounded-md gap-2 flex items-center justify-center " onClick={() => navigate('/preview')}>

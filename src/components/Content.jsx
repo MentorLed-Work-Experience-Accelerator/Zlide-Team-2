@@ -5,7 +5,7 @@ const Content = () => {
   const navigate = useNavigate()
   return (
 <div className="fixed flex flex-col inset-0 justify-center items-center bg-[#717171] backdrop-blur-2xl z-50">
-      <h1 className="text-black text-start text-3xl font-bold w-[60%]">
+      <h1 className="text-black text-start text-3xl font-bold w-[60%] relative top-6">
         Paste your Content
       </h1>
       <br />
@@ -21,7 +21,7 @@ const Content = () => {
       <br />
       <div className="flex justify-end gap-16 w-[60%]">
         <button className="text-blue-500 text-xl font-bold " onClick={() => navigate('/dashboardone')}>Cancel</button>
-        <button className="md:py-3 py-2 md:px-10 px-10 w-[40%] text-white bg-blue-500 hover:bg-black hover:outline-none font-semibold outline outline-none outline-primary rounded-md border-none" onClick={() => navigate('/contentpasted')}>
+        <button className="md:py-3 py-2 md:px-6 px-6 w-[30%] text-white bg-blue-500 hover:bg-black hover:outline-none font-medium outline outline-none rounded-md border-none" onClick={() => navigate('/contentpasted')}>
           Generate Presentation
         </button>
       </div>
