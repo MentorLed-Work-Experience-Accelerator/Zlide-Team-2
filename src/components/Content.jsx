@@ -21,7 +21,7 @@ const Content = () => {
       <br />
       <div className="flex justify-end gap-16 w-[60%]">
         <button className="text-blue-500 text-xl font-bold " onClick={() => navigate('/dashboardone')}>Cancel</button>
-        <button className="md:py-3 py-2 md:px-12 px-10 w-[40%] text-white bg-blue-500 hover:bg-black hover:outline-none font-semibold outline outline-none outline-primary rounded-md border-none" onClick={() => navigate('/contentpasted')}>
+        <button className="md:py-3 py-2 md:px-10 px-10 w-[40%] text-white bg-blue-500 hover:bg-black hover:outline-none font-semibold outline outline-none outline-primary rounded-md border-none" onClick={() => navigate('/contentpasted')}>
           Generate Presentation
         </button>
       </div>
