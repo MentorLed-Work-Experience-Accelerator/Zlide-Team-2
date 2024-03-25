@@ -4,7 +4,7 @@ import { useNavigate  } from 'react-router-dom'
 const Content = () => {
   const navigate = useNavigate()
   return (
-<div className="fixed flex flex-col inset-0 justify-center items-center bg-[#0000001A] backdrop-blur-2xl z-50">
+<div className="fixed flex flex-col inset-0 justify-center items-center bg-[#717171] backdrop-blur-2xl z-50">
       <h1 className="text-black text-start text-3xl font-bold w-[60%]">
         Paste your Content
       </h1>

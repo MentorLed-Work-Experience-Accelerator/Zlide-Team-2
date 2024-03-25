@@ -5,7 +5,7 @@ const ContentPasted = () => {
   const navigate = useNavigate()
   // const navigate = useNavigate()
   return (
-  <div className="fixed flex flex-col inset-0 justify-center items-center bg-[#0000001A] backdrop-blur-2xl z-50">
+  <div className="fixed flex flex-col inset-0 justify-center items-center bg-[#717171] backdrop-blur-2xl z-50">
 
     
       <h1 className="text-black text-start text-3xl font-bold w-[60%]">
@@ -51,7 +51,7 @@ const ContentPasted = () => {
         <button className="text-blue-500 text-xl font-bold" onClick={() => navigate('/content')}>
           Edit Content
         </button>
-        <button className="md:py-3 py-2 md:px-12 px-6 text-white bg-blue-500 hover:bg-black hover:outline-none font-semibold outline outline-none outline-primary rounded-md border-none w-[30%]" onClick={() => navigate('/contentpasted')}>
+        <button className="md:py-3 py-2 md:px-12 px-6 text-white bg-blue-500 hover:bg-black hover:outline-none font-semibold outline outline-none outline-primary rounded-md border-none w-[30%]" onClick={() => navigate('/slides')}>
           Generate Slides
         </button>
       </div>

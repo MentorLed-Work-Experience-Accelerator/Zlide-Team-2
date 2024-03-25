@@ -8,12 +8,14 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, onLogout, user }) => {
 
   return (
     <div className='fixed left-0 right-0 top-0 flex justify-between items-center px-[100px] py-6 bg-white z-50'>
-      <img src={zlideLogo} alt="" className="w-[100px] cursor-pointer" onClick={() => navigate('/onboarding')} />
+      <img src={zlideLogo} alt="" className="w-[100px] cursor-pointer" onClick={() => navigate('/')} />
       <div className="flex items-center justify-center gap-16 text-lg">
         <Link to='/dashboardone' className='text-primary'>Home</Link>
         <Link to='/about' className='hover:text-primary'>About Us</Link>
-        <Link to='/login' className='hover:text-primary'>Pricing</Link>
-        <Link to='/sign-up' className='hover:text-primary'>Help</Link>
+        <Link to='/pricing' className='hover:text-primary'>
+          Pricing
+        </Link>
+        <Link to='/dashboard' className='hover:text-primary'>Help</Link>
       </div>
       <div className="flex items-center gap-8">
         {isLoggedIn &&
@@ -51,7 +53,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, onLogout, user }) => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

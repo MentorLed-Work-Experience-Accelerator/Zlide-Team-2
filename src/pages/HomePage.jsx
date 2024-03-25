@@ -1,8 +1,17 @@
 // import React from 'react'
-import { HeroSection } from '../components'
+import { Contact, Footer, HeroSection, Partners, Pricing } from '../components'
 
 const HomePage = () => {
-  return <div>HomePage</div>;
-};
+  return (
+    <div>
+      {/* <Navbar /> */}
+      <HeroSection />
+      <Pricing />
+      <Contact />
+      <Partners />
+      <Footer />
+    </div>
+  )
+}
 
 export default HomePage;

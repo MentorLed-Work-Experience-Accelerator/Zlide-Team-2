@@ -70,7 +70,7 @@ const SignUp = ({ onSignUp }) => {
                 </span>
                 <Link 
                   to="/login"
-                  className='text-primary hover:underline hover:underline-offset-4'
+                  className='text-primary hover:underline hover:underline-offset-4 font-bold'
                 >
                   Sign In.
                 </Link>

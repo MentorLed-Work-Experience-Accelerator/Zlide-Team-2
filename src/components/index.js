@@ -1,6 +1,3 @@
-export { default as Navbar } from './Navbar'
-export { default as HeroSection } from './HeroSection'
-export { default as Footer } from './Footer'
 export { default as Login } from './Login'
 export { default as SignUp } from './SignUp'
 export { default as Verification } from './Verification'
@@ -24,3 +21,11 @@ export { default as PreviewThumbnail } from './PreviewThumbnail'
 export { default as PreviewSlide } from './PreviewSlide'
 export { default as Content } from './Content' 
 export { default as ContentPasted } from './ContentPasted' 
+export { default as Navbar } from "./Navbar";
+export { default as HeroSection } from "./HeroSection";
+export { default as Features } from "./Features";
+export { default as Pricing } from "./Pricing";
+export { default as Contact } from "./Contact";
+export { default as Partners } from "./Partners";
+export { default as Loading } from "./Loading";
+export { default as Footer } from "./Footer";

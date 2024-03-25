@@ -4,7 +4,7 @@ import { useNavigate  } from 'react-router-dom'
 const DownloadDialogueBox = () => {
     const navigate = useNavigate()
   return (
-    <div>
+    <div className="fixed inset-0 justify-center items-center bg-[#717171] backdrop-blur-2xl z-50">
         <div className="mt-[120px] ml-[460px] w-[500px] p-20 top-52 bg-[rgb(58,58,58)] rounded-md">
             <div className="flex flex-col gap-2 space-y-4">
                 <div className="flex flex-col gap-2">

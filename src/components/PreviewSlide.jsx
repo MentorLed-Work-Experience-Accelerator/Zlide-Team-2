@@ -28,7 +28,7 @@ const PreviewSlide = () => {
                 <button className="bg-white py-4 px-4 rounded-[4px] hover:border hover:border-primary text-primary" onClick={() => navigate('/dashboardone')}>
                 Back to Dashboard
                 </button>
-                <button className="bg-primary py-4 px-10 rounded-[4px] hover:border hover:border-primary hover:bg-white hover:text-primary text-white" onClick={() => navigate('/downloadoverlay')}>
+                <button className="bg-primary py-4 px-10 rounded-[4px] hover:border hover:border-primary hover:bg-white hover:text-primary text-white" onClick={() => navigate('/download')}>
                 Download
                 </button>
             </div>

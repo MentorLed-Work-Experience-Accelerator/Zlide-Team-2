@@ -1,8 +1,1 @@
-export const navLinks = [
-  {
-
-  },
-  {
-
-  },
-];
+export const navLinks = [{}, {}];
