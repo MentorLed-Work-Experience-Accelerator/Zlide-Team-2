@@ -1,7 +1,9 @@
-import React from "react";
+// import React from "react";
 import { authBg } from "../assets";
+import { useNavigate  } from 'react-router-dom'
 
 const HeroSection = () => {
+  const navigate = useNavigate()
   return (
     <div className="flex justify-center text-black items-center flex-col text-center my-60">
       <h1 className="text-4xl font-bold">
@@ -12,7 +14,7 @@ const HeroSection = () => {
       <br />
       <p className="text-2xl ">
         Create stunning presentation effortless and download instantly,
-        <span className="text-primary text-2xl"> no signup required</span>
+        <span className="text-primary text-2xl">No signup required</span>
       </p>
       <br />
       <div className="w-2/4 ">
@@ -23,7 +25,7 @@ const HeroSection = () => {
         />
         <br />
         <br />
-        <button className="md:py-2 py-2 md:px-8 px-6 text-white bg-blue-500 hover:bg-black hover:outline-black font-semibold outline outline-1 outline-primary rounded-md mr-3">
+        <button className="md:py-2 py-2 md:px-8 px-6 text-white bg-blue-500 hover:bg-black hover:outline-black font-semibold outline outline-1 outline-primary rounded-md mr-3" onClick={() => navigate('/dashboardone')}>
           Generate Presentation
         </button>
         <button className="md:py-2 py-2 md:px-8 px-6 text-primary bg-blue-100  hover:bg-black hover:outline-black font-semibold outline outline-1 outline-gray-300 rounded-md">
